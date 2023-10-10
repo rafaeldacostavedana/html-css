@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(imagens/wallpaper004.jpg);
+}
+
+header {
+    background-image: linear-gradient(to bottom, gray, black);
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+header h1 {
+    color: #000000;
+    font-family: var(--fonte-padrao);
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.268);
+    padding: 0 10px 0 10px;
+}
+
+main {
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px #0000006b;
+    border-radius: 0 0 10px 10px;
+}
+
+main h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+
+article {
+    width: 500px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    height: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+}
