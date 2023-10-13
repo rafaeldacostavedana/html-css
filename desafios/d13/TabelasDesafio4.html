@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabelas</title>
+
+
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+th {
+    background-color: gray;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th rowspan="2">Áreas</th>
+        <th rowspan="2">Disciplinas</th>
+        <th colspan="2">Notas</th>
+        <th rowspan="2">Média</th>
+    </tr>
+    <tr>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+    </tr>
+    <tr>
+        <td rowspan="4">Exatas</td>
+        <td>Matemática</td>
+        <td>9.0</td>
+        <td>10</td>
+        <td>9.5</td>
+    </tr>
+    <tr>
+        <td>Física</td>
+        <td>8.0</td>
+        <td>10</td>
+        <td>9.0</td>
+    </tr>
+    <tr>
+        <td>Química</td>
+        <td>9.5</td>
+        <td>9.5</td>
+        <td>9.5</td>
+    </tr>
+    <tr>
+        <td>Bioloia</td>
+        <td>7.0</td>
+        <td>9.0</td>
+        <td>8.0</td>
+    </tr>
+    <tr>
+        <th colspan="4">Média de Exatas</th>
+        <th>9.0</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Humanas</td>
+        <td>História</td>
+        <td>7.0</td>
+        <td>7.5</td>
+        <td>7.0</td>
+    </tr>
+    <tr>
+        <td>Geografia</td>
+        <td>8.0</td>
+        <td>6.0</td>
+        <td>7.0</td>
+    </tr>
+    <tr>
+        <th colspan="4">Média de Humanas</th>
+        <th>7.0</th>
+    </tr>
+</table>
+</body>
+
+</html>

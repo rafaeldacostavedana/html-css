@@ -7,27 +7,46 @@
     <title>Tabelas</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: lightgrey;
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
-            font-family:'Arial Narrow Bold', sans-serif;
+            font-family: 'Arial Narrow Bold', sans-serif;
             padding: 10px;
 
         }
 
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
         }
 
         thead,
         tfoot {
-            background-color: lightgray;
+            background-color: rgb(56, 55, 55);
             font-family: 'Times New Roman', Times, serif;
+            color: aliceblue;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(56, 55, 55);
         }
 
         .num {
@@ -40,6 +59,10 @@
             padding: 10px;
             text-align: center;
         }
+
+        tbody>tr:nth-child(odd) {
+            background-color: lightgray;
+        }
     </style>
 
 </head>
@@ -47,13 +70,18 @@
 <body>
     <h1>Tabelas Grandes</h1>
 
-    
+
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!--
+                scope = especifica th com seus dados
+                col = Coluna
+                row = linha
+                -->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -97,10 +125,90 @@
                 <td>Santa Catarina</td>
                 <td class="num">7 609 601</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</td>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
